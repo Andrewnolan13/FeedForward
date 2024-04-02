@@ -6,10 +6,10 @@ import matplotlib.pyplot as plt
 from matplotlib.colors import Normalize
 
 #Internal modules
-from Scaler import Scaler
-from CostFunctions import *
-from Optimizer import *
-from ActivationFunctions import *
+from .Scaler import Scaler
+from .CostFunctions import *
+from .Optimizer import *
+from .ActivationFunctions import *
 class NeuralNetwork:
     def __init__(self, 
                  Inputs:np.ndarray, 
