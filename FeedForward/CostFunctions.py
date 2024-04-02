@@ -1,13 +1,8 @@
 import numpy as np
 
 """
-Reduce complexity by not doing the forwar pass inside the Loss function. Only do Forwards when absolutely necessary.
-
-Can probaby remove the inputs from the loss functions - I don't think I will ever want to calculate the loss on a subset, will I? Leave open for now. Actually, I do want the inputs and outputs if I want to get the gradient
-of a subset. What is the point in doing subsets if you are getting the gradient of the entirety of the set? Completely defeats the purpose.
-
-Suppose I am not doing batches? Then it is a waste of resources to do the forward. For now, just do the forward and swallow the cost, but later can encorporate conditionality somehow. 
-Maybe a good idea for a parameter of batch:bool = False ? need to think about that. 
+All of the different types of Loss functions should be objects here following same structure as
+MSE.
 """
 class MSE:
     def __init__(self):
