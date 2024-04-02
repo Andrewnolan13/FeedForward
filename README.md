@@ -1,2 +1,2 @@
 # FeedForward
-FeedForward Network using only numpy
+FeedForward Neural Network using only numpy
